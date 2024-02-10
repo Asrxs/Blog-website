@@ -1,0 +1,362 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited a:active {
+    color: white;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Open sans', sans serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+article {
+    width: 45vw;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: white;
+    animation-name: popup;
+    animation-duration: 0.8s;
+    margin-top: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-position: inside;
+    max-width: 55ch;
+}
+
+p {
+    max-width: 55ch;
+    margin: 0 auto;
+}
+
+article ul,
+article ol {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+
+    article {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 220%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .cards{
+        padding: 20px 0;
+    }
+
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    flex-direction: row;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+.li-logo a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.li-logo i {
+    font-size: 250%;
+}
+
+.vimeo {
+    text-align: center;
+
+}
+
+main{
+    margin-top: 100px;
+    min-height: calc(1h - 200px);
+    display: flex;
+}
+
+.card{
+    list-style: none;
+    width: 400px;
+    aspect-ratio: 1/1.6;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 10);
+    animation-name: popup;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+
+    
+}
+
+.card:nth-of-type(2){
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+.card:nth-of-type(3){
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+}
+.card:nth-of-type(4){
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+.card:nth-of-type(5){
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.card:nth-of-type(6){
+    animation-delay: 0.6s;
+    animation-fill-mode: backwards;
+}
+
+.card:nth-of-type(7){
+    animation-delay: 0.7s;
+    animation-fill-mode: backwards;
+}
+.card:nth-of-type(8){
+    animation-delay: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    justify-content: center;
+    
+ }
+
+.cards header{
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.cards section{
+    height: 29.5%;
+    padding: 20px;
+    border-left: 0.5px solid rgba(214, 214, 214,0.4);;
+    border-right: 0.5px solid rgba(214, 214, 214,0.4);
+    border-bottom: 0.5px solid rgba(214, 214, 214,0.4);
+
+}
+
+.cards footer{
+    height: 10%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    border-left: 0.0px solid rgba(214, 214, 214,0.4);;
+    border-right: 0.0px solid rgba(214, 214, 214,0.4);
+    border-bottom: 0.0px solid rgba(214, 214, 214,0.4);
+}
+
+.header-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/img/bodybuilder-weight-training-stress-38630.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.header-hero2{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/img/pexels-photo-12353388.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header-hero3{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/img/d3e93cabd4ed1fc95316cd1ea0ef2830.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header-hero4{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("/img/6b8d4e185ad3f1dbc3bd8ef9e5c26c98.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.cards header h2{
+    padding: 20px;
+    color: white;
+    font-family: "Open sans";
+    font-weight: 400;
+    font-size: 180%;
+}
+
+.cards footer a{
+    color: blue;
+    position: relative;
+}
+
+.footera{
+    height: 100px;
+    background: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer p{
+    margin: 0;
+    padding: 0 40px;
+}
+
+.footer p:nth-of-type(2){
+    display: none;
+}
+
+div.cards{
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+input,textarea{
+    font-size: 100%;
+    font-family: 'Open sans';
+    padding: 5px;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+input[type="submit"]{
+    background: black;
+    border: none;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+form h2{
+    font-family: "Open sans";
+    font-weight: 400;
+    font-size: 100%;
+}
+
+
+@media screen and (max-wdith:1000px) {
+    .li-nav, .search, .button-{
+        display:none;
+
+    }
+}
